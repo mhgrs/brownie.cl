@@ -1,190 +1,182 @@
-/* Este css esta siendo creado con la intencion de poder seruna estructura
+    /* Este css esta siendo creado con la intencion de poder seruna estructura
  generica para la creacion del citio provisioriamente llamado "Brownie.cl" */
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-
-/* Etiquetas */
-
-html,
-body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-input {
-    border: 2px solid rgb(240, 238, 238);
-    border-radius: 8px;
-    margin: 25px;
-    box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.692);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
-    outline: none;
-    width: 175px;
-    height: 40px;
-    text-align: center;
-}
-
-a {
-    padding: 10px;
-    font-size: small;
-}
-
-a:link,
-a:visited {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: lightcoral;
-}
-
-button:active {
-    background-color: lightcoral;
-}
-
-button:hover {
-    background-color: rgb(180, 75, 75);
-}
-
-button {
-    border: 1px solid #3837374d;
-    border-radius: 8px;
-    padding: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin: 10px;
-    font-size: medium;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    outline: none;
-    background-color: rgb(160, 57, 57);
-    color: white;
-}
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    font-size: medium;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-
-/* CONTENEDORES */
-
-.border {
-    border: 1px solid red;
-}
-
-.bg-container {
-    background-color: white;
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.head {
-    width: 96%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-head a {
-    display: flex;
-    align-items: center;
-}
-
-.left-head a img {
-    width: 35px;
-}
-
-.rigth-head {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rigth-head a img {
-    width: 15px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-column-center {
-    margin-top: 10%;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    margin-top: 25px;
-}
-
-.input-session {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-}
-
-.input-session input {
-    margin: 15px;
-}
-
-.enlaces {
-    margin-top: 25px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.crear-perfil {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-@media screen and (min-width: 720px) {
+    
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+    /* Etiquetas */
+    
+    html,
     body {
-        background: linear-gradient(0deg, rgba(85, 39, 39, 1) 1%, rgba(145, 65, 66, 1) 48%, rgba(190, 82, 83, 1) 100%);
+        height: 100%;
+        padding: 0;
+        margin: 0;
     }
+    
+    input {
+        border: 2px solid rgb(240, 238, 238);
+        border-radius: 8px;
+        margin: 25px;
+        box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.692);
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        outline: none;
+        width: 175px;
+        height: 40px;
+        text-align: center;
+    }
+    
+    a {
+        padding: 10px;
+        font-size: small;
+    }
+    
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover {
+        color: lightcoral;
+    }
+    
+    button:active {
+        background-color: lightcoral;
+    }
+    
+    button:hover {
+        background-color: rgb(180, 75, 75);
+    }
+    
+    button {
+        border: 1px solid #3837374d;
+        border-radius: 8px;
+        padding: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin: 10px;
+        font-size: medium;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        outline: none;
+        background-color: rgb(160, 57, 57);
+        color: white;
+    }
+    
+    body {
+        font-family: 'Quicksand', sans-serif;
+        font-size: medium;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    /* CONTENEDORES */
+    
+    .border {
+        border: 1px solid red;
+    }
+    
     .bg-container {
-        width: 80%;
+        background-color: white;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .card-session {
-        margin-top: 20%;
+    
+    .head {
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
     }
+    
+    .left-head a {
+        display: flex;
+        align-items: center;
+    }
+    
     .left-head a img {
-        width: 50px;
+        width: 35px;
     }
-    .left-head a h3 {
-        font-size: x-large;
+    
+    .rigth-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    
     .rigth-head a img {
-        width: 30px;
-        margin-left: 25px;
+        width: 15px;
     }
-}
-
-
-}
-
-}
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-column-center {
+        margin-top: 10%;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo {
+        margin-top: 25px;
+    }
+    
+    .input-session {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    
+    .input-session input {
+        margin: 15px;
+    }
+    
+    .enlaces {
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .crear-perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 720px) {
+        body {
+            background: linear-gradient(0deg, rgba(85, 39, 39, 1) 1%, rgba(145, 65, 66, 1) 48%, rgba(190, 82, 83, 1) 100%);
+        }
+        .bg-container {
+            width: 80%;
+        }
+        .card-session {
+            margin-top: 20%;
+        }
+        .left-head a img {
+            width: 50px;
+        }
+        .left-head a h3 {
+            font-size: x-large;
+        }
+        .rigth-head a img {
+            width: 30px;
+            margin-left: 25px;
+        }
+    }
