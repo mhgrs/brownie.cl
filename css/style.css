@@ -95,6 +95,7 @@
     
     .left-head a {
         display: flex;
+        align-items: center;
     }
     
     .left-head a img {
