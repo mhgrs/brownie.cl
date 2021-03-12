@@ -197,17 +197,35 @@
         background-color: grey;
     }
     
-    .img-perfil {
-        top: 110px;
+    .info-perfil {
+        top: 200px;
         left: 25px;
-        position: relative;
+        position: absolute;
         width: fit-content;
+        display: flex;
+        align-items: flex-end;
     }
     
-    .img-perfil img {
+    .info-perfil img {
         border: 3px solid rgb(255, 255, 255);
         width: 130px;
         border-radius: 100%;
+    }
+    
+    .info-text {
+        margin-left: 20px;
+    }
+    
+    .info-text h2 {
+        margin-bottom: 0;
+    }
+    
+    .info-text p {
+        margin-top: 10px;
+    }
+    
+    .enlaces-perfil {
+        display: flex;
     }
     
     @media screen and (min-width: 720px) {
@@ -215,7 +233,7 @@
             background: linear-gradient(0deg, rgba(85, 39, 39, 1) 1%, rgba(145, 65, 66, 1) 48%, rgba(190, 82, 83, 1) 100%);
         }
         .bg-container {
-            width: 80%;
+            width: 70%;
         }
         .left-head a img {
             width: 50px;
