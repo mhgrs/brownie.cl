@@ -197,26 +197,36 @@
         background-color: grey;
     }
     
-    .info-perfil {
-        top: 200px;
-        left: 25px;
-        position: absolute;
+    .foto-perfil {
+        top: 100px;
+        left: 20px;
+        position: relative;
         width: fit-content;
         display: flex;
         align-items: flex-end;
     }
     
-    .info-perfil img {
+    .foto-perfil img {
         border: 3px solid rgb(255, 255, 255);
         width: 130px;
         border-radius: 100%;
     }
     
+    .container {
+        z-index: 1;
+        width: 100%;
+        height: min-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+    
     .info-text {
-        margin-left: 20px;
+        margin-left: 180px;
     }
     
     .info-text h2 {
+        margin-top: 5px;
         margin-bottom: 0;
     }
     
@@ -225,7 +235,24 @@
     }
     
     .enlaces-perfil {
+        margin-top: 15px;
         display: flex;
+        justify-content: center;
+    }
+    
+    .categorias {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+    }
+    
+    .categorias a {
+        background-color: rgb(160, 57, 57);
+        border-radius: 25px;
+        color: rgb(255, 255, 255);
+        width: fit-content;
+        height: fit-content;
+        margin: 3px;
     }
     
     @media screen and (min-width: 720px) {
@@ -244,5 +271,11 @@
         .rigth-head a img {
             width: 30px;
             margin-left: 25px;
+        }
+        .enlaces-perfil {
+            margin-top: 0px;
+        }
+        .container {
+            grid-template-columns: 1fr 1fr;
         }
     }
