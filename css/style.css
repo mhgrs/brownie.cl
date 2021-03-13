@@ -103,7 +103,7 @@
         width: 35px;
     }
     
-    container .rigth-head {
+    .rigth-head {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -154,7 +154,6 @@
     }
     
     .enlaces {
-        margin-top: 25px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -193,12 +192,12 @@
     
     .banner {
         width: 99%;
-        height: 200px;
+        height: 150px;
         background-color: grey;
     }
     
     .foto-perfil {
-        top: 100px;
+        top: 50px;
         left: 20px;
         position: relative;
         width: fit-content;
@@ -270,6 +269,7 @@
         background-color: rgba(187, 179, 179, 0.329);
         border-radius: 10px;
         margin: 1%;
+        height: fit-content;
     }
     
     .comprar-brownie {
@@ -279,8 +279,39 @@
     }
     
     .b-contenido {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .b-contenido img {
+        width: 25px;
+    }
+    
+    .b-cantidad {
         display: flex;
         align-items: center;
+        height: 30px;
+    }
+    
+    .b-input input {
+        margin-left: 0;
+        width: 95%;
+        height: 30px;
+        margin-bottom: 0px;
+        text-align: start;
+    }
+    
+    .b-input textarea {
+        border-radius: 8px;
+        height: 150px;
+        width: 95%;
+        border: 2px solid rgb(240, 238, 238);
+        margin-top: 25px;
+        resize: none;
+        box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.692);
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        outline: none;
     }
     
     @media screen and (min-width: 720px) {
@@ -289,6 +320,12 @@
         }
         .bg-container {
             width: 70%;
+        }
+        .banner {
+            height: 200px;
+        }
+        .foto-perfil {
+            top: 100px;
         }
         .left-head a img {
             width: 50px;
