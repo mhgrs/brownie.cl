@@ -103,7 +103,7 @@
         width: 35px;
     }
     
-    .rigth-head {
+    container .rigth-head {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -213,7 +213,6 @@
     }
     
     .container {
-        z-index: 1;
         width: 100%;
         height: min-content;
         display: grid;
@@ -253,6 +252,23 @@
         width: fit-content;
         height: fit-content;
         margin: 3px;
+    }
+    
+    .descripcion {
+        background-color: rgba(187, 179, 179, 0.329);
+        border-radius: 10px;
+        margin: 1%;
+    }
+    
+    .comprar-brownie {
+        background-color: rgba(187, 179, 179, 0.329);
+        border-radius: 10px;
+        margin: 1%;
+    }
+    
+    .b-contenido {
+        display: flex;
+        align-items: center;
     }
     
     @media screen and (min-width: 720px) {
