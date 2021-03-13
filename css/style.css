@@ -208,20 +208,19 @@
     
     .foto-perfil img {
         border: 3px solid rgb(255, 255, 255);
-        width: 130px;
+        width: 100px;
         border-radius: 100%;
     }
     
     .container {
-        width: 100%;
+        width: fit-content;
         height: min-content;
         display: grid;
-        grid-template-columns: 1fr;
-        align-content: center;
+        width: 100%;
     }
     
     .info-text {
-        margin-left: 180px;
+        margin-left: 150px;
     }
     
     .info-text h2 {
@@ -239,8 +238,20 @@
         justify-content: center;
     }
     
+    .container-info {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        width: 100%;
+    }
+    
+    .cont-categorias {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
     .categorias {
-        margin-top: 15px;
         display: grid;
         grid-template-columns: min-content min-content min-content;
     }
@@ -252,6 +263,7 @@
         width: fit-content;
         height: fit-content;
         margin: 3px;
+        font-size: smaller;
     }
     
     .descripcion {
