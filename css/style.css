@@ -1,359 +1,356 @@
-    /* Este css esta siendo creado con la intencion de poder seruna estructura
+/* Este css esta siendo creado con la intencion de poder seruna estructura
  generica para la creacion del citio provisioriamente llamado "Brownie.cl" */
-    
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-    /* Etiquetas */
-    
-    html,
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Etiquetas */
+
+html,
+body {
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: 2px solid rgb(240, 238, 238);
+    border-radius: 8px;
+    margin: 25px;
+    box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.692);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    outline: none;
+    width: 175px;
+    height: 40px;
+    text-align: center;
+}
+
+a {
+    padding: 10px;
+    font-size: small;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+button:active {
+    background-color: lightcoral;
+}
+
+button:hover {
+    background-color: rgb(180, 75, 75);
+}
+
+button {
+    border: 1px solid #3837374d;
+    border-radius: 8px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 10px;
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    outline: none;
+    background-color: rgb(160, 57, 57);
+    color: white;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* CONTENEDORES */
+
+.border {
+    border: 3px solid red;
+}
+
+.bg-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    max-width: 1200px;
+    grid-template-rows: auto 1fr auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.left-head a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-head a img {
+    width: 35px;
+}
+
+.rigth-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rigth-head a img {
+    width: 17px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-column-center {
+    margin-top: 8%;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 25px;
+}
+
+.footer {
+    height: 390px;
+    margin-top: 100px;
+    background-color: magenta;
+    text-align: center;
+}
+
+
+/* CONTENEDORES INICIAR SESIÓN */
+
+.input-session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.input-session input {
+    margin: 15px;
+}
+
+.enlaces {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crear-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cuentas {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cuentas button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+}
+
+.cuentas button img {
+    width: 30px;
+}
+
+.footer {
+    height: 390px;
+    margin-top: 100px;
+    background-color: magenta;
+}
+
+.banner-img {
+    max-width: 1200px;
+    max-height: 400px;
+    padding: 2px;
+}
+
+.banner-img img {
+    height: 100%;
+    width: 100%;
+    min-width: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foto-perfil {
+    position: relative;
+    width: fit-content;
+    left: 25px;
+    bottom: 30px;
+}
+
+.foto-perfil img {
+    border: 3px solid rgb(255, 255, 255);
+    width: 100px;
+    border-radius: 100%;
+}
+
+.foto-nombre {
+    display: flex;
+    width: fit-content;
+    height: 80px;
+}
+
+.container {
+    width: fit-content;
+    height: min-content;
+    display: grid;
+    width: 100%;
+}
+
+.info-text {
+    margin-left: 30px;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.info-text p {
+    margin-top: 10px;
+}
+
+.enlaces-perfil {
+    margin-top: 15px;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+
+.categorias {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+}
+
+.categorias a {
+    background-color: rgb(160, 57, 57);
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+    margin: 3px;
+    font-size: smaller;
+}
+
+.card-content {
+    background-color: rgba(187, 179, 179, 0.329);
+    border-radius: 10px;
+    margin: 1%;
+    height: fit-content;
+}
+
+.b-contenido {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.b-contenido img {
+    width: 25px;
+}
+
+.b-cantidad {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.b-input input {
+    margin-left: 0;
+    margin-right: 0;
+    width: 95%;
+    height: 30px;
+    margin-bottom: 0px;
+    text-align: start;
+}
+
+.b-input textarea {
+    border-radius: 8px;
+    height: 150px;
+    width: 95%;
+    border: 2px solid rgb(240, 238, 238);
+    margin-top: 25px;
+    resize: none;
+    box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.692);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    outline: none;
+}
+
+@media screen and (min-width: 800px) {
     body {
-        height: auto;
-        padding: 0;
-        margin: 0;
+        background: linear-gradient(0deg, rgba(85, 39, 39, 1) 1%, rgba(145, 65, 66, 1) 48%, rgba(190, 82, 83, 1) 100%);
     }
-    
-    input {
-        border: 2px solid rgb(240, 238, 238);
-        border-radius: 8px;
-        margin: 25px;
-        box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.692);
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 300;
-        outline: none;
-        width: 175px;
-        height: 40px;
-        text-align: center;
-    }
-    
-    a {
-        padding: 10px;
-        font-size: small;
-    }
-    
-    a:link,
-    a:visited {
-        text-decoration: none;
-        color: black;
-    }
-    
-    a:hover {
-        color: lightcoral;
-    }
-    
-    button:active {
-        background-color: lightcoral;
-    }
-    
-    button:hover {
-        background-color: rgb(180, 75, 75);
-    }
-    
-    button {
-        border: 1px solid #3837374d;
-        border-radius: 8px;
-        padding: 8px;
-        padding-left: 12px;
-        padding-right: 12px;
-        margin: 10px;
-        font-size: medium;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 600;
-        outline: none;
-        background-color: rgb(160, 57, 57);
-        color: white;
-    }
-    
-    body {
-        font-family: 'Quicksand', sans-serif;
-        font-size: medium;
-        font-weight: 600;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0px;
-        padding: 0px;
-    }
-    /* CONTENEDORES */
-    
-    .border {
-        border: 3px solid red;
-    }
-    
     .bg-container {
-        background-color: white;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
+        width: 70%;
     }
-    
-    .head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-    }
-    
-    .left-head a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
+    .foto-perfil {}
     .left-head a img {
-        width: 35px;
+        width: 50px;
     }
-    
-    .rigth-head {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .left-head a h3 {
+        font-size: x-large;
     }
-    
     .rigth-head a img {
-        width: 17px;
-    }
-    
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .card-column-center {
-        margin-top: 8%;
-        width: 320px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .logo {
-        margin-top: 25px;
-    }
-    
-    .footer {
-        height: 390px;
-        margin-top: 100px;
-        background-color: magenta;
-        text-align: center;
-    }
-    /* CONTENEDORES INICIAR SESIÓN */
-    
-    .input-session {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
-    }
-    
-    .input-session input {
-        margin: 15px;
-    }
-    
-    .enlaces {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .crear-perfil {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .cuentas {
-        margin-top: 25px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .cuentas button {
-        border: 0;
-        background-color: rgba(255, 255, 255, 0);
-        width: 100%;
-    }
-    
-    .cuentas button img {
         width: 30px;
+        margin-left: 25px;
     }
-    
-    .footer {
-        height: 390px;
-        margin-top: 100px;
-        background-color: magenta;
-    }
-    
-    .banner {
-        width: 99%;
-        height: 150px;
-    }
-    
-    .banner-img {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-    
-    .banner-img img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-    
-    .foto-perfil {
-        bottom: 37px;
-        left: 20px;
-        position: relative;
-        width: fit-content;
-        display: flex;
-        align-items: flex-end;
-    }
-    
-    .foto-perfil img {
-        border: 3px solid rgb(255, 255, 255);
-        width: 100px;
-        border-radius: 100%;
-    }
-    
-    .container {
-        width: fit-content;
-        height: min-content;
-        display: grid;
-        width: 100%;
-    }
-    
-    .info-text {
-        margin-left: 150px;
-    }
-    
-    .info-text h2 {
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-    
-    .info-text p {
-        margin-top: 10px;
-    }
-    
     .enlaces-perfil {
-        margin-top: 15px;
-        display: flex;
-        justify-content: center;
+        margin-top: 0px;
     }
-    
-    .container-info {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        width: 100%;
+    .container {
+        grid-template-columns: 1fr 1fr;
     }
-    
-    .cont-categorias {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .categorias {
-        display: grid;
-        grid-template-columns: min-content min-content min-content;
-    }
-    
-    .categorias a {
-        background-color: rgb(160, 57, 57);
-        border-radius: 25px;
-        color: rgb(255, 255, 255);
-        width: fit-content;
-        height: fit-content;
-        margin: 3px;
-        font-size: smaller;
-    }
-    
-    .descripcion {
-        background-color: rgba(187, 179, 179, 0.329);
-        border-radius: 10px;
-        margin: 1%;
-        height: fit-content;
-    }
-    
-    .comprar-brownie {
-        background-color: rgba(187, 179, 179, 0.329);
-        border-radius: 10px;
-        margin: 1%;
-    }
-    
-    .b-contenido {
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-    
-    .b-contenido img {
-        width: 25px;
-    }
-    
-    .b-cantidad {
-        display: flex;
-        align-items: center;
-        height: 30px;
-    }
-    
-    .b-input input {
-        margin-left: 0;
-        margin-right: 0;
-        width: 95%;
-        height: 30px;
-        margin-bottom: 0px;
-        text-align: start;
-    }
-    
-    .b-input textarea {
-        border-radius: 8px;
-        height: 150px;
-        width: 95%;
-        border: 2px solid rgb(240, 238, 238);
-        margin-top: 25px;
-        resize: none;
-        box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.692);
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 300;
-        outline: none;
-    }
-    
-    @media screen and (min-width: 720px) {
-        body {
-            background: linear-gradient(0deg, rgba(85, 39, 39, 1) 1%, rgba(145, 65, 66, 1) 48%, rgba(190, 82, 83, 1) 100%);
-        }
-        .bg-container {
-            width: 70%;
-        }
-        .banner {
-            height: 200px;
-        }
-        .foto-perfil {
-            top: 100px;
-        }
-        .left-head a img {
-            width: 50px;
-        }
-        .left-head a h3 {
-            font-size: x-large;
-        }
-        .rigth-head a img {
-            width: 30px;
-            margin-left: 25px;
-        }
-        .enlaces-perfil {
-            margin-top: 0px;
-        }
-        .container {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
+}
+
+grid-template-columns: 1fr 1fr;
+
+}
+
+}
