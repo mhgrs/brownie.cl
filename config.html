@@ -1,0 +1,141 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="head ">
+            <div class="left-head ">
+                <a href="index.html">
+                    <img src="img/brownie.svg">
+
+                    <h3 style="margin-left: 5%;">BROWNIE</h3>
+                </a>
+
+            </div>
+            <div class="right-head ">
+                <a href="explorar.html">
+                    <h3>Explorar </h3>
+
+                </a>
+
+
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/person.svg" alt=""></a>
+                        <ul>
+                            <li><a href="perfil.html">Perfil</a></li>
+                            <li>
+                                <a href="">Configuracion</a></li>
+                            <li>
+                                <a href="">Salir</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="content ">
+
+            <div class="card-config  ">
+                <div class="opc-config">
+                    <a href="javascript:void(0);" onclick="mostrarPerfil()">Perfil</a>
+                    <hr>
+                    <a href="javascript:void(0);" onclick="mostrarCuenta()">Cuenta</a>
+                    <hr>
+                    <a href="javascript:void(0);" onclick="mostrarBrownie()">Brownie</a>
+                    <hr>
+                    <a href="javascript:void(0);" onclick="mostrarPagos()">Pagos</a>
+                    <hr>
+                    <a href="javascript:void(0);" onclick="mostrarAyuda()">Ayuda</a>
+
+                </div>
+                <!-- configuracion perfil -->
+                <div id="perfil-show">
+                    <div class="perfil-config border">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                </div>
+                <!-- configuracion cuenta -->
+                <div id="cuenta-show">
+                    Cuenta
+                </div>
+                <!-- configuracion brownie -->
+                <div id="brownie-show">
+                    Brownie
+                </div>
+                <!-- configuracion pagos -->
+                <div id="pagos-show">
+                    Pagos
+                </div>
+                <!-- configuracion  ayuda-->
+                <div id="ayuda-show">
+                    Ayuda
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Fin del contenido -->
+        <div class="footer ">
+            <h1>Esto es un footer</h1>
+        </div>
+
+
+    </div>
+    <!-- script que controla los elementos mostrados en la configuracion -->
+    <script>
+        function mostrarPerfil() {
+            document.getElementById('perfil-show').style.display = 'block'
+            document.getElementById('cuenta-show').style.display = 'none'
+            document.getElementById('brownie-show').style.display = 'none'
+            document.getElementById('pagos-show').style.display = 'none'
+            document.getElementById('ayuda-show').style.display = 'none'
+        }
+
+        function mostrarCuenta() {
+            document.getElementById('cuenta-show').style.display = 'block'
+            document.getElementById('perfil-show').style.display = 'none'
+            document.getElementById('brownie-show').style.display = 'none'
+            document.getElementById('pagos-show').style.display = 'none'
+            document.getElementById('ayuda-show').style.display = 'none'
+        }
+
+        function mostrarBrownie() {
+            document.getElementById('brownie-show').style.display = 'block'
+            document.getElementById('perfil-show').style.display = 'none'
+            document.getElementById('cuenta-show').style.display = 'none'
+            document.getElementById('pagos-show').style.display = 'none'
+            document.getElementById('ayuda-show').style.display = 'none'
+        }
+
+        function mostrarPagos() {
+            document.getElementById('pagos-show').style.display = 'block'
+            document.getElementById('perfil-show').style.display = 'none'
+            document.getElementById('brownie-show').style.display = 'none'
+            document.getElementById('cuenta-show').style.display = 'none'
+            document.getElementById('ayuda-show').style.display = 'none'
+        }
+
+        function mostrarAyuda() {
+            document.getElementById('ayuda-show').style.display = 'block'
+            document.getElementById('perfil-show').style.display = 'none'
+            document.getElementById('cuenta-show').style.display = 'none'
+            document.getElementById('brownie-show').style.display = 'none'
+            document.getElementById('pagos-show').style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>
